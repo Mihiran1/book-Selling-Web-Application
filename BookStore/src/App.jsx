@@ -35,7 +35,7 @@ function App() {
         <Services handleOrderPopup={handleOrderPopup}/>
         <Banner/>
         <AppStore/>
-        <Books/>
+        
         <Testimonial/>
         <Footer/>
         <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup}/>
