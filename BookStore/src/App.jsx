@@ -14,7 +14,7 @@ import OrderPopup from './components/OderPopup/OrderPopup.jsx';
 function App() {
   const [orderPopup, setOrderPopup] = React.useState(false);
   const handleOrderPopup = () => {
-    setOrderPopup(!orderPopup);
+    
   };
 
   React.useEffect(() => {
