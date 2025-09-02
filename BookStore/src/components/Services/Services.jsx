@@ -3,10 +3,10 @@ import { FaStar } from "react-icons/fa";
 import Img1 from "../../assets/books/book2.jpg";
 import Img2 from "../../assets/books/book1.jpg";    
 import Img3 from "../../assets/books/book3.jpg";
-import Img4 from "../../assets/books/book4.jpg";
-import Img5 from "../../assets/books/book5.jpg";
-import Img6 from "../../assets/books/book7.jpg";
-import Img7 from "../../assets/books/book7.jpg";
+import Img4 from "../../assets/books/Book4.jpg";
+import Img5 from "../../assets/books/Book5.jpg";
+import Img6 from "../../assets/books/Book7.jpg";
+import Img7 from "../../assets/books/Book7.jpg";
 
 const ServicesData = [
     {

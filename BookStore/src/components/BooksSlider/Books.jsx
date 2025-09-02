@@ -1,7 +1,7 @@
 import React from 'react'
-import Book1 from "../../assets/books/book10.jpg";
-import Book2 from "../../assets/books/book11.jpg";
-import Book3 from "../../assets/books/book14.jpg";
+import Book1 from "../../assets/books/Book10.jpg";
+import Book2 from "../../assets/books/Book11.jpg";
+import Book3 from "../../assets/books/Book14.jpg";
 import Book4 from "../../assets/books/book12.jpg";
 import Book5 from "../../assets/books/book6.jpg";
 import { FaStar } from "react-icons/fa6";

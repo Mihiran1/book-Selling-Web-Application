@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import Vector from '../../assets/website/blue2.png'
-import Book1 from "../../assets/books/book4.jpg";
-import Book2 from "../../assets/books/book7.jpg";
-import Book3 from "../../assets/books/book9.jpg";
+import Vector from "../../assets/website/Blue2.png";
+import Book1 from "../../assets/books/Book4.jpg";
+import Book2 from "../../assets/books/Book7.jpg";
+import Book3 from "../../assets/books/Book9.jpg";
 
 const ImageList = [
     {
