@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         // ඔබගේ Docker Hub Username/Repository Name එක මෙතන දෙන්න
-        DOCKER_IMAGE = "ඔබේ_dockerhub_username/ඔබේ_repo_name"
+        DOCKER_IMAGE = "mihiran039/bookstore-frontend" 
         // Jenkins Credentials වලට දුන්නු ID එක
         DOCKER_CREDENTIALS_ID = 'dockerhub-creds' 
     }
