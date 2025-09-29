@@ -8,9 +8,9 @@ pipeline {
     }
     stages {
         stage('Checkout Code') {
-            steps {
+           steps {
                 // ඔබගේ Git Repository එකෙන් Code එක ලබා ගැනීම
-                git branch: 'main', url: 'ඔබේ_git_repository_URL'
+                git branch: 'main', url: 'https://github.com/Mihiran1/book-Selling-Web-Application.git' 
             }
         }
         
