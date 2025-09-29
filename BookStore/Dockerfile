@@ -1,12 +1,25 @@
-FROM node:20-alpine
+# Stage 1: Build Stage (React Application එක Build කිරීම)
+FROM node:18-alpine AS build
 
+# Working Directory එක සකස් කිරීම
 WORKDIR /app
 
-COPY package*.json ./
+# Dependencies install කිරීම
+COPY package.json ./
 RUN npm install
 
+# Source code copy කර build කිරීම
 COPY . .
+RUN npm run build
 
-EXPOSE 5173
+# Stage 2: Production Stage (Static Files Serve කිරීමට NGINX භාවිතය)
+FROM nginx:alpine
 
-CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+# Build Stage එකේදී සෑදූ Static Files NGINX folder එකට copy කිරීම
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Port 80 Expose කිරීම
+EXPOSE 80
+
+# NGINX Server එක Start කිරීම
+CMD ["nginx", "-g", "daemon off;"]
